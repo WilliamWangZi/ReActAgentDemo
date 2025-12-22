@@ -1,0 +1,12 @@
+# 第一步：屏蔽根目录下的所有文件/目录（核心）
+/*
+
+# 第二步：放行 .gitignore 文件（否则规则无法提交和生效）
+!/.gitignore
+
+# 第三步：放行指定目录（先放行目录本身，再放行目录内的内容）
+# 放行 snake_game/src 目录（必须先放行目录，否则其内文件无法被追踪）
+!/ReActAgentDemo/
+!/ReActAgentDemo/src/
+# 放行 src 目录下的所有内容（递归）
+/ReActAgentDemo/src/*
